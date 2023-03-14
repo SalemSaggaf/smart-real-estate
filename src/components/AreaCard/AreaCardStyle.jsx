@@ -25,6 +25,8 @@ const AreaCardAreaSnippetStyle = {
     width: '90%',
     height: '150px',
     borderRadius: 25,
+    backgroundSize: 'cover',
+    backgroundRepeat: 'no-repeat',
     margin: 'auto',
     border: '1px solid #20943e',
 }
