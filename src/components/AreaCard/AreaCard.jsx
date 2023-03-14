@@ -21,7 +21,7 @@ function AreaCard({title, img, id}) {
         } else {
             localStorage.setItem('areas', JSON.stringify([newArea]));
         }
-        toast("تامة اضافة المساحة الى المفضلة");
+        toast("تمت اضافة المساحة الى المفضلة");
     }
 
     const showMoreDetails = (e) => {
