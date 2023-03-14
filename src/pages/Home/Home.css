@@ -1,0 +1,19 @@
+.charts-row-1 {
+    
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row-reverse;
+    padding: 25px 20px;
+    /* height: 30%; */
+}
+
+.periods-container {
+    display: flex;
+    padding-top: 30px;
+    padding-right: 50px;
+    justify-content: flex-start;
+    /* width: 100%; */
+    /* height: 100%; */
+    /* background-color: red; */
+}
+

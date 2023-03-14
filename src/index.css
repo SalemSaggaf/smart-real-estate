@@ -1,5 +1,12 @@
+@font-face {
+  font-family: 'janna-lt';
+  
+  src: url('./Fonts/Janna-LT-Regular.ttf');
+}
+
 body {
   margin: 0;
+  direction: rtl;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;

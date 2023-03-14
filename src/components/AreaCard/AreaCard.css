@@ -1,0 +1,14 @@
+.AreaCardActionStyle {
+    padding: 10px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+    font-size: 18px;
+}
+
+.AreaCardDescriptionStyle {
+    font-size: 14px;
+    margin: 10px 0;
+    text-align: center;
+}
+
