@@ -5,6 +5,7 @@ import { faHeart, faCircleInfo } from '@fortawesome/free-solid-svg-icons';
 import { useNavigate } from 'react-router-dom';
 import './AreaCard.css'
 import areas from '../../Data/Areas';
+import {  toast } from 'react-toastify';
 
 function AreaCard({title, img, id}) {
 
@@ -20,7 +21,7 @@ function AreaCard({title, img, id}) {
         } else {
             localStorage.setItem('areas', JSON.stringify([newArea]));
         }
-
+        toast("تامة اضافة المساحة الى المفضلة");
     }
 
     const showMoreDetails = (e) => {
