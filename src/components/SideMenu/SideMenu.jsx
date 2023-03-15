@@ -11,7 +11,8 @@ function SideMenu(props) {
     return (
         <div className="side-menu">
         <div className="side-menu__header">
-            <h2 className="side-menu__title">القائمة</h2>
+            {/* <h2 className="side-menu__title">القائمة</h2> */}
+            <img src='/img/logo.png' height={100} alt="logo"/>
         </div>
         <div className="side-menu__content">
             {/* <ul className="side-menu__list"> */}
