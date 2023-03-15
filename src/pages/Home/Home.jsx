@@ -109,8 +109,6 @@ function Home(props) {
     const onPeriodChange = (value) => {
         let _areas = [...areas];
         for(let i = 0; i < _areas.length; i++) {
-            let recommendation = false;
-            let percentage = 20;
     
             switch (value) {
                 case 'one_year':
@@ -118,11 +116,11 @@ function Home(props) {
                     _areas[i].percentage = _areas[i].one_year_percentage;
                     break;
                 case 'three_years':
-                    _areas[i].recommendation = _areas[i].three_years_recommendation;
+                    _areas[i].recommendation = _areas[i].three_year_recommendation;
                     _areas[i].percentage = _areas[i].three_year_percentage;
                     break;
                 case 'five_years':
-                    _areas[i].recommendation = _areas[i].five_years_recommendation;
+                    _areas[i].recommendation = _areas[i].five_year_recommendation;
                     _areas[i].percentage = _areas[i].five_year_percentage;
                     break;
                 default:
@@ -130,7 +128,8 @@ function Home(props) {
             }
         }
 
-        setTableData(areas.map(area => {
+        setTableData(_areas.map(area => {
+            console.log('area name', area.name, 'area recommendation', area.recommendation, 'area percentage', area.percentage);
             return {
                 name: area.name,
                 id: area.id,
